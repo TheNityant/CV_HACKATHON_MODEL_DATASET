@@ -1,0 +1,17 @@
+# Git LFS Configuration for GeneZap
+# These files will be tracked with Git LFS
+# 
+# Model Files (V1, V2, V3)
+V1_Model_Output/*.pkl filter=lfs diff=lfs merge=lfs -text
+V2_Model_Output/*.pkl filter=lfs diff=lfs merge=lfs -text
+V2_Model_Output/*.json filter=lfs diff=lfs merge=lfs -text
+V3_Model_Output/*.h5 filter=lfs diff=lfs merge=lfs -text
+# 
+# Database and images
+MAIN_MODEL/*.fasta filter=lfs diff=lfs merge=lfs -text
+MAIN_MODEL/*.png filter=lfs diff=lfs merge=lfs -text
+# 
+# Training datasets (small enough to include)
+CNN_DATASET/**/*.png filter=lfs diff=lfs merge=lfs -text
+CNN_DATASET/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+DATASET/*.csv filter=lfs diff=lfs merge=lfs -text
